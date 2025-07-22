@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataLogik - Intelligente Datenlösungen für Unternehmen</title>
+    <title>Serafino Data Analytics - Intelligente Datenlösungen für Unternehmen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -277,7 +277,13 @@
             height: 384px;
             position: relative;
             overflow: hidden;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            
         }
+        
 
         .stats-grid {
             display: grid;
@@ -455,11 +461,11 @@
     <header class="header" id="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">DataLogik</div>
+                <div class="logo">Serafino Data Analytics</div>
                 <nav class="nav" id="nav">
                     <a href="#startseite">Startseite</a>
-                    <a href="#ueber-mich">Über mich</a>
                     <a href="#angebot">Angebot</a>
+                    <a href="#ueber-mich">Über mich</a>
                     <a href="#kontakt">Kontakt</a>
                 </nav>
                 <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
@@ -478,19 +484,17 @@
                             Intelligente Datenlösungen für Unternehmen
                         </h1>
                         <p class="body-lg mb-8">
-                            Daten sind der Schlüssel zum Erfolg. Ich helfen Ihnen, sie richtig zu nutzen - mit maßgeschneiderten Lösungen, die Ihr Business messbar voranbringen.
+                            Daten sind der Schlüssel zum Erfolg. Ich helfe Ihnen, sie richtig zu nutzen – mit massgeschneiderten Lösungen, die Ihr Business messbar voranbringen.
                         </p>
                     </div>
                     
                     <div class="flex gap-4">
                         <a href="#kontakt" class="btn-primary">
-                            Kostenlose Beratung →
-                        </a>
-                        <a href="#portfolio" class="btn-secondary">
-                            Portfolio ansehen
+                            Kontakt →
                         </a>
                     </div>
 
+                    <!--
                     <div class="stats-grid">
                         <div class="stat-item">
                             <div class="stat-value">150+</div>
@@ -505,72 +509,12 @@
                             <div class="stat-label">Erfahrung</div>
                         </div>
                     </div>
+                    //-->
                 </div>
 
                 <div class="hero-visual">
-                    <div class="feature-card hero-card">
-                        <div style="position: absolute; inset: 0; opacity: 0.2;">
-                            <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none">
-                                <defs>
-                                    <pattern id="circuit" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-                                        <path d="M20 0v40M0 20h40" stroke="rgb(218, 255, 1)" stroke-width="0.5"/>
-                                        <circle cx="20" cy="20" r="2" fill="rgb(218, 255, 1)"/>
-                                    </pattern>
-                                </defs>
-                                <rect width="100%" height="100%" fill="url(#circuit)"/>
-                            </svg>
-                        </div>
-                        
-                        <div style="position: relative; z-index: 10; height: 100%; display: flex; align-items: center; justify-content: center;">
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; width: 100%;">
-                                <div style="display: flex; flex-direction: column; gap: 16px;">
-                                    <div class="flex items-center gap-3">
-                                        <div style="width: 40px; height: 40px; border-radius: 8px; background: rgba(218, 255, 1, 0.2); display: flex; align-items: center; justify-content: center;">
-                                            📊
-                                        </div>
-                                        <div>
-                                            <div style="font-size: 14px; font-weight: 600; color: var(--text-primary);">Datenanalyse</div>
-                                            <div style="font-size: 12px; color: var(--text-muted);">Real-time Processing</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="flex items-center gap-3">
-                                        <div style="width: 40px; height: 40px; border-radius: 8px; background: rgba(127, 74, 142, 0.2); display: flex; align-items: center; justify-content: center;">
-                                            📈
-                                        </div>
-                                        <div>
-                                            <div style="font-size: 14px; font-weight: 600; color: var(--text-primary);">Visualisierung</div>
-                                            <div style="font-size: 12px; color: var(--text-muted);">Interactive Dashboards</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div style="display: flex; flex-direction: column; gap: 16px;">
-                                    <div class="flex items-center gap-3">
-                                        <div style="width: 40px; height: 40px; border-radius: 8px; background: rgba(218, 255, 1, 0.2); display: flex; align-items: center; justify-content: center;">
-                                            📊
-                                        </div>
-                                        <div>
-                                            <div style="font-size: 14px; font-weight: 600; color: var(--text-primary);">Prognosen</div>
-                                            <div style="font-size: 12px; color: var(--text-muted);">AI-powered Insights</div>
-                                        </div>
-                                    </div>
-
-                                    <div style="height: 64px; background: linear-gradient(to right, rgba(218, 255, 1, 0.1), rgba(127, 74, 142, 0.1)); border-radius: 8px; padding: 8px;">
-                                        <div style="display: flex; items-end: center; justify-content: space-between; height: 100%;">
-                                            <div style="background: var(--accent-primary); border-radius: 2px; width: 8px; height: 60%; opacity: 0.6;"></div>
-                                            <div style="background: var(--accent-primary); border-radius: 2px; width: 8px; height: 80%; opacity: 0.6;"></div>
-                                            <div style="background: var(--accent-primary); border-radius: 2px; width: 8px; height: 45%; opacity: 0.6;"></div>
-                                            <div style="background: var(--accent-primary); border-radius: 2px; width: 8px; height: 90%; opacity: 0.6;"></div>
-                                            <div style="background: var(--accent-primary); border-radius: 2px; width: 8px; height: 70%; opacity: 0.6;"></div>
-                                            <div style="background: var(--accent-primary); border-radius: 2px; width: 8px; height: 55%; opacity: 0.6;"></div>
-                                            <div style="background: var(--accent-primary); border-radius: 2px; width: 8px; height: 85%; opacity: 0.6;"></div>
-                                            <div style="background: var(--accent-primary); border-radius: 2px; width: 8px; height: 65%; opacity: 0.6;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="hero-card">
+                        <img src="ai_img.webp" alt="Beschreibung" style="height: 100%; width: 100%; object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -581,9 +525,9 @@
     <section id="angebot" class="section section-bg-secondary">
         <div class="container">
             <div class="text-center mb-16">
-                <h2 class="display-md mb-6">Meine Dienstleistungen</h2>
+                <h2 class="display-md mb-6">Angebot</h2>
                 <p class="body-lg max-w-3xl mx-auto">
-                    Von der Datenanalyse bis zur KI-Implementation - ich biete umfassende Lösungen für Ihre datengetriebenen Herausforderungen.
+                    Von der Datenanalyse bis zur KI-Implementation - ich entwickle skalierbare Datenlösungen, die flexibel mit Ihrem Unternehmen mitwachsen.
                 </p>
             </div>
 
@@ -594,14 +538,14 @@
                             📊
                         </div>
                         <div style="flex: 1;">
-                            <h3 class="h3 mb-3">Datenanalyse & Visualisierung</h3>
+                            <h3 class="h3 mb-3">Datenanalyse & Reporting</h3>
                             <p class="body-md mb-4">
                                 Verwandeln Sie Ihre Rohdaten in aussagekräftige Insights mit modernen Analysemethoden und interaktiven Dashboards.
                             </p>
                             <ul style="list-style: none; padding: 0;">
                                 <li class="flex items-center gap-2 mb-2">
                                     <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
-                                    <span class="body-sm">Power BI & Tableau Dashboards</span>
+                                    <span class="body-sm">Power BI Dashboards</span>
                                 </li>
                                 <li class="flex items-center gap-2 mb-2">
                                     <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
@@ -609,19 +553,10 @@
                                 </li>
                                 <li class="flex items-center gap-2 mb-2">
                                     <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
-                                    <span class="body-sm">Datenbereinigung & -aufbereitung</span>
-                                </li>
-                                <li class="flex items-center gap-2 mb-2">
-                                    <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
                                     <span class="body-sm">KPI-Definition & Monitoring</span>
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="mt-6" style="padding-top: 24px; border-top: 1px solid var(--border-subtle);">
-                        <button style="background: transparent; border: none; color: var(--accent-primary); cursor: pointer;">
-                            Mehr erfahren →
-                        </button>
                     </div>
                 </div>
 
@@ -655,11 +590,6 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="mt-6" style="padding-top: 24px; border-top: 1px solid var(--border-subtle);">
-                        <button style="background: transparent; border: none; color: var(--accent-primary); cursor: pointer;">
-                            Mehr erfahren →
-                        </button>
-                    </div>
                 </div>
 
                 <div class="feature-card">
@@ -683,130 +613,10 @@
                                 </li>
                                 <li class="flex items-center gap-2 mb-2">
                                     <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
-                                    <span class="body-sm">NLP & Text Mining</span>
-                                </li>
-                                <li class="flex items-center gap-2 mb-2">
-                                    <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
                                     <span class="body-sm">Computer Vision Lösungen</span>
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="mt-6" style="padding-top: 24px; border-top: 1px solid var(--border-subtle);">
-                        <button style="background: transparent; border: none; color: var(--accent-primary); cursor: pointer;">
-                            Mehr erfahren →
-                        </button>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <div class="flex items-start gap-4">
-                        <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(218, 255, 1, 0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                            📈
-                        </div>
-                        <div style="flex: 1;">
-                            <h3 class="h3 mb-3">Business Intelligence</h3>
-                            <p class="body-md mb-4">
-                                Strategische Entscheidungsunterstützung durch datenbasierte Erkenntnisse und Prognosen.
-                            </p>
-                            <ul style="list-style: none; padding: 0;">
-                                <li class="flex items-center gap-2 mb-2">
-                                    <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
-                                    <span class="body-sm">Executive Reporting</span>
-                                </li>
-                                <li class="flex items-center gap-2 mb-2">
-                                    <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
-                                    <span class="body-sm">Forecasting & Budgetplanung</span>
-                                </li>
-                                <li class="flex items-center gap-2 mb-2">
-                                    <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
-                                    <span class="body-sm">Marktanalysen</span>
-                                </li>
-                                <li class="flex items-center gap-2 mb-2">
-                                    <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
-                                    <span class="body-sm">ROI-Optimierung</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-6" style="padding-top: 24px; border-top: 1px solid var(--border-subtle);">
-                        <button style="background: transparent; border: none; color: var(--accent-primary); cursor: pointer;">
-                            Mehr erfahren →
-                        </button>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <div class="flex items-start gap-4">
-                        <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(218, 255, 1, 0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                            ⚡
-                        </div>
-                        <div style="flex: 1;">
-                            <h3 class="h3 mb-3">Prozessautomatisierung</h3>
-                            <p class="body-md mb-4">
-                                Automatisierung wiederkehrender Aufgaben zur Effizienzsteigerung und Kosteneinsparung.
-                            </p>
-                            <ul style="list-style: none; padding: 0;">
-                                <li class="flex items-center gap-2 mb-2">
-                                    <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
-                                    <span class="body-sm">RPA Implementation</span>
-                                </li>
-                                <li class="flex items-center gap-2 mb-2">
-                                    <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
-                                    <span class="body-sm">Workflow-Optimierung</span>
-                                </li>
-                                <li class="flex items-center gap-2 mb-2">
-                                    <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
-                                    <span class="body-sm">API-Integration</span>
-                                </li>
-                                <li class="flex items-center gap-2 mb-2">
-                                    <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
-                                    <span class="body-sm">Monitoring & Alerting</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-6" style="padding-top: 24px; border-top: 1px solid var(--border-subtle);">
-                        <button style="background: transparent; border: none; color: var(--accent-primary); cursor: pointer;">
-                            Mehr erfahren →
-                        </button>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <div class="flex items-start gap-4">
-                        <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(218, 255, 1, 0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                            🎯
-                        </div>
-                        <div style="flex: 1;">
-                            <h3 class="h3 mb-3">Datenstrategie-Beratung</h3>
-                            <p class="body-md mb-4">
-                                Entwicklung maßgeschneiderter Datenstrategien für nachhaltigen Geschäftserfolg.
-                            </p>
-                            <ul style="list-style: none; padding: 0;">
-                                <li class="flex items-center gap-2 mb-2">
-                                    <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
-                                    <span class="body-sm">Data Governance</span>
-                                </li>
-                                <li class="flex items-center gap-2 mb-2">
-                                    <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
-                                    <span class="body-sm">Technologie-Roadmaps</span>
-                                </li>
-                                <li class="flex items-center gap-2 mb-2">
-                                    <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
-                                    <span class="body-sm">Change Management</span>
-                                </li>
-                                <li class="flex items-center gap-2 mb-2">
-                                    <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-primary); flex-shrink: 0;"></div>
-                                    <span class="body-sm">Schulungen & Workshops</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-6" style="padding-top: 24px; border-top: 1px solid var(--border-subtle);">
-                        <button style="background: transparent; border: none; color: var(--accent-primary); cursor: pointer;">
-                            Mehr erfahren →
-                        </button>
                     </div>
                 </div>
             </div>
@@ -816,130 +626,36 @@
     <!-- About Section -->
     <section id="ueber-mich" class="section">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center;">
                 <div>
                     <h2 class="display-md mb-6">Über mich</h2>
                     <h3 class="h2 mb-6" style="color: var(--accent-primary);">
-                        Erfahrener Data Scientist mit Leidenschaft für innovative Lösungen
+                        Erfahrener Data Engineer mit Leidenschaft für innovative Lösungen
                     </h3>
                     <p class="body-lg mb-8">
-                        Mit über 5 Jahren Erfahrung in der Datenanalyse und Künstlichen Intelligenz helfe ich Unternehmen dabei, das volle Potenzial ihrer Daten auszuschöpfen. Meine Expertise umfasst die gesamte Data Science Pipeline - von der Datenerhebung bis zur produktiven Implementierung intelligenter Algorithmen.
+                        Als Einzelfirma mit Spezialisierung in Big Data unterstütze ich Unternehmen dabei, aus ihren Daten echten Mehrwert zu generieren. Ich helfe Ihnen, komplexe Informationen verständlich aufzubereiten, datenbasierte Entscheidungen zu treffen und Ihre Geschäftsprozesse effizienter zu gestalten.
+                        Ich arbeite mit modernen Tools wie Power BI sowohl in der Microsoft Azure als auch AWS Cloud, um flexible, skalierbare und sichere Lösungen zu entwickeln – immer genau abgestimmt auf Ihre individuellen Anforderungen.
                     </p>
 
-                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
-                        <div class="text-center">
-                            <div style="width: 64px; height: 64px; background: rgba(218, 255, 1, 0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;">
-                                🏆
-                            </div>
-                            <div style="font-size: 24px; font-weight: bold; color: var(--text-primary);">150+</div>
-                            <div style="font-size: 14px; color: var(--text-muted);">Projekte</div>
-                        </div>
-                        
-                        <div class="text-center">
-                            <div style="width: 64px; height: 64px; background: rgba(218, 255, 1, 0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;">
-                                👥
-                            </div>
-                            <div style="font-size: 24px; font-weight: bold; color: var(--text-primary);">50+</div>
-                            <div style="font-size: 14px; color: var(--text-muted);">Kunden</div>
-                        </div>
-                        
-                        <div class="text-center">
-                            <div style="width: 64px; height: 64px; background: rgba(218, 255, 1, 0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;">
-                                💡
-                            </div>
-                            <div style="font-size: 24px; font-weight: bold; color: var(--text-primary);">5+</div>
-                            <div style="font-size: 14px; color: var(--text-muted);">Jahre</div>
-                        </div>
-                    </div>
                 </div>
 
                 <div>
-                    <div class="mb-8">
-                        <h3 class="h3 mb-6">Technische Expertise</h3>
-                        <div style="display: flex; flex-direction: column; gap: 16px;">
-                            <div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="body-md" style="color: var(--text-secondary); font-weight: 500;">Python & R</span>
-                                    <span class="body-sm">95%</span>
-                                </div>
-                                <div style="width: 100%; background: var(--bg-tertiary); border-radius: 4px; height: 8px;">
-                                    <div style="background: var(--accent-primary); height: 8px; border-radius: 4px; width: 95%; transition: width 1s ease-out;"></div>
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="body-md" style="color: var(--text-secondary); font-weight: 500;">Machine Learning</span>
-                                    <span class="body-sm">90%</span>
-                                </div>
-                                <div style="width: 100%; background: var(--bg-tertiary); border-radius: 4px; height: 8px;">
-                                    <div style="background: var(--accent-primary); height: 8px; border-radius: 4px; width: 90%; transition: width 1s ease-out;"></div>
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="body-md" style="color: var(--text-secondary); font-weight: 500;">Data Visualization</span>
-                                    <span class="body-sm">92%</span>
-                                </div>
-                                <div style="width: 100%; background: var(--bg-tertiary); border-radius: 4px; height: 8px;">
-                                    <div style="background: var(--accent-primary); height: 8px; border-radius: 4px; width: 92%; transition: width 1s ease-out;"></div>
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="body-md" style="color: var(--text-secondary); font-weight: 500;">Cloud Platforms</span>
-                                    <span class="body-sm">85%</span>
-                                </div>
-                                <div style="width: 100%; background: var(--bg-tertiary); border-radius: 4px; height: 8px;">
-                                    <div style="background: var(--accent-primary); height: 8px; border-radius: 4px; width: 85%; transition: width 1s ease-out;"></div>
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="body-md" style="color: var(--text-secondary); font-weight: 500;">Business Intelligence</span>
-                                    <span class="body-sm">88%</span>
-                                </div>
-                                <div style="width: 100%; background: var(--bg-tertiary); border-radius: 4px; height: 8px;">
-                                    <div style="background: var(--accent-primary); height: 8px; border-radius: 4px; width: 88%; transition: width 1s ease-out;"></div>
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="body-md" style="color: var(--text-secondary); font-weight: 500;">Deep Learning</span>
-                                    <span class="body-sm">80%</span>
-                                </div>
-                                <div style="width: 100%; background: var(--bg-tertiary); border-radius: 4px; height: 8px;">
-                                    <div style="background: var(--accent-primary); height: 8px; border-radius: 4px; width: 80%; transition: width 1s ease-out;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3 class="h3 mb-6">Zertifizierungen</h3>
+                    
+                        <h3 class="h3 mb-8">Zertifizierungen</h3>
                         <div style="display: flex; flex-direction: column; gap: 12px;">
                             <div class="flex items-center gap-3">
-                                <span style="color: var(--accent-primary);">✓</span>
-                                <span class="body-md">AWS Certified Data Analytics</span>
+                                <span style="color: var(--accent-primary);">✓ </span>
+                                <span class="body-md"> Microsoft Azure Data Engineer Associate</span>
                             </div>
                             <div class="flex items-center gap-3">
-                                <span style="color: var(--accent-primary);">✓</span>
-                                <span class="body-md">Google Cloud Professional Data Engineer</span>
+                                <span style="color: var(--accent-primary);">✓ </span>
+                                <span class="body-md"> AWS Certified Cloud Practitioner</span>
                             </div>
                             <div class="flex items-center gap-3">
-                                <span style="color: var(--accent-primary);">✓</span>
-                                <span class="body-md">Microsoft Azure Data Scientist</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <span style="color: var(--accent-primary);">✓</span>
-                                <span class="body-md">Tableau Desktop Specialist</span>
+                                <span style="color: var(--accent-primary);">✓ </span>
+                                <span class="body-md"> Databricks Certified Data Engineer Associate</span>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -949,9 +665,9 @@
     <section id="kontakt" class="section">
         <div class="container">
             <div class="text-center mb-16">
-                <h2 class="display-md mb-6">Lassen Sie uns sprechen</h2>
+                <h2 class="display-md mb-6">Kontakt</h2>
                 <p class="body-lg max-w-3xl mx-auto">
-                    Bereit für Ihr nächstes Datenprojekt? Ich freue mich auf Ihre Herausforderung!
+                    Sie haben Fragen oder möchten ein Projekt besprechen? Ich freue mich auf Ihre Nachricht. Nehmen Sie unverbindlich Kontakt auf – per E-Mail oder direkt über das Formular.
                 </p>
             </div>
 
@@ -968,17 +684,7 @@
                                 </div>
                                 <div>
                                     <div style="font-weight: 500; color: var(--text-primary);">E-Mail</div>
-                                    <div class="body-sm">kontakt@datalogik.de</div>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-4">
-                                <div style="width: 40px; height: 40px; background: rgba(218, 255, 1, 0.2); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                                    📞
-                                </div>
-                                <div>
-                                    <div style="font-weight: 500; color: var(--text-primary);">Telefon</div>
-                                    <div class="body-sm">+49 (0) 123 456 789</div>
+                                    <div class="body-sm">samuele.serafino@gmail.com</div>
                                 </div>
                             </div>
 
@@ -988,7 +694,7 @@
                                 </div>
                                 <div>
                                     <div style="font-weight: 500; color: var(--text-primary);">Standort</div>
-                                    <div class="body-sm">München, Deutschland</div>
+                                    <div class="body-sm">Winterthur, Schweiz</div>
                                 </div>
                             </div>
                         </div>
@@ -1002,19 +708,6 @@
                             </div>
                         </div>
 
-                        <div class="mt-6">
-                            <div class="flex gap-3">
-                                <a href="https://linkedin.com/in/datalogik" target="_blank" style="width: 40px; height: 40px; background: var(--bg-tertiary); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); text-decoration: none; transition: all 0.2s;">
-                                    💼
-                                </a>
-                                <a href="https://github.com/datalogik" target="_blank" style="width: 40px; height: 40px; background: var(--bg-tertiary); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); text-decoration: none; transition: all 0.2s;">
-                                    🔗
-                                </a>
-                                <a href="https://xing.com/profile/datalogik" target="_blank" style="width: 40px; height: 40px; background: var(--bg-tertiary); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); text-decoration: none; transition: all 0.2s;">
-                                    🌐
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -1043,7 +736,7 @@
                                         type="email"
                                         name="email"
                                         class="input-field"
-                                        placeholder="max@unternehmen.de"
+                                        placeholder="max@unternehmen.ch"
                                         required
                                     />
                                 </div>
@@ -1093,56 +786,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div style="grid-column: span 2;">
-                    <div class="mb-6">
-                        <h3 style="font-size: 24px; font-weight: bold; color: var(--accent-primary); margin-bottom: 12px;">
-                            DataLogik
-                        </h3>
-                        <p class="body-md" style="max-width: 400px;">
-                            Intelligente Datenlösungen für Ihr Business
-                        </p>
-                    </div>
-
-                    <div style="display: flex; flex-direction: column; gap: 12px;">
-                        <div class="flex items-center gap-3">
-                            <span style="color: var(--accent-primary);">✉️</span>
-                            <span class="body-sm">kontakt@datalogik.de</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span style="color: var(--accent-primary);">📞</span>
-                            <span class="body-sm">+49 (0) 123 456 789</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span style="color: var(--accent-primary);">📍</span>
-                            <span class="body-sm">München, Deutschland</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h4 style="font-weight: 600; color: var(--text-primary); margin-bottom: 16px;">Dienstleistungen</h4>
-                    <div style="display: flex; flex-direction: column; gap: 8px;">
-                        <span class="body-sm" style="color: var(--text-muted); cursor: pointer; transition: color 0.2s;" onmouseover="this.style.color='var(--accent-primary)'" onmouseout="this.style.color='var(--text-muted)'">Datenanalyse</span>
-                        <span class="body-sm" style="color: var(--text-muted); cursor: pointer; transition: color 0.2s;" onmouseover="this.style.color='var(--accent-primary)'" onmouseout="this.style.color='var(--text-muted)'">Machine Learning</span>
-                        <span class="body-sm" style="color: var(--text-muted); cursor: pointer; transition: color 0.2s;" onmouseover="this.style.color='var(--accent-primary)'" onmouseout="this.style.color='var(--text-muted)'">Business Intelligence</span>
-                        <span class="body-sm" style="color: var(--text-muted); cursor: pointer; transition: color 0.2s;" onmouseover="this.style.color='var(--accent-primary)'" onmouseout="this.style.color='var(--text-muted)'">Data Engineering</span>
-                    </div>
-                </div>
-
-                <div>
-                    <h4 style="font-weight: 600; color: var(--text-primary); margin-bottom: 16px;">Rechtliches</h4>
-                    <div style="display: flex; flex-direction: column; gap: 8px;">
-                        <a href="#" class="body-sm" style="color: var(--text-muted); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--accent-primary)'" onmouseout="this.style.color='var(--text-muted)'">Datenschutz</a>
-                        <a href="#" class="body-sm" style="color: var(--text-muted); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--accent-primary)'" onmouseout="this.style.color='var(--text-muted)'">Impressum</a>
-                        <a href="#" class="body-sm" style="color: var(--text-muted); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--accent-primary)'" onmouseout="this.style.color='var(--text-muted)'">AGB</a>
-                    </div>
-                </div>
-            </div>
+            
 
             <div class="footer-bottom">
                 <p class="body-sm">
-                    © 2024 DataLogik. Alle Rechte vorbehalten.
+                    © Serafino Data Analytics. Alle Rechte vorbehalten.
                 </p>
                 
                 <button 
@@ -1204,7 +852,7 @@
             submitButton.disabled = true;
             
             setTimeout(() => {
-                alert('Nachricht gesendet! Vielen Dank für Ihre Anfrage. Ich melde mich innerhalb von 24 Stunden bei Ihnen.');
+                alert('Nachricht gesendet! Vielen Dank für Ihre Anfrage. Ich melde mich bald möglichst bei Ihnen.');
                 form.reset();
                 submitButton.innerHTML = originalText;
                 submitButton.disabled = false;
