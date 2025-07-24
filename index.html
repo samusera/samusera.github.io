@@ -57,7 +57,7 @@
 
         /* Layout */
         .container {
-            max-width: 1200px;
+            max-width: 90%;
             margin: 0 auto;
             padding: 0 24px;
         }
@@ -106,14 +106,6 @@
             color: var(--accent-primary);
         }
 
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--text-primary);
-            font-size: 24px;
-            cursor: pointer;
-        }
 
         /* Buttons */
         .btn-primary {
@@ -336,6 +328,15 @@
             min-height: 120px;
         }
 
+        .contact-form {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            max-width: 90%;
+            margin: 0 auto;
+            gap: 48px;
+            max-width: 1200px;
+        }
+
         /* Footer */
         .footer {
             background: var(--bg-secondary);
@@ -379,10 +380,6 @@
                 display: flex;
             }
             
-            .mobile-menu-btn {
-                display: block;
-            }
-            
             .hero-content {
                 grid-template-columns: 1fr;
                 text-align: center;
@@ -400,6 +397,12 @@
             
             .feature-card {
                 padding: 24px;
+            }
+
+            .contact-form {
+                display: grid;
+                grid-template-columns: 1fr;
+                max-width: 90%;
             }
             
             .footer-grid {
@@ -468,7 +471,6 @@
                     <a href="#ueber-mich">Über mich</a>
                     <a href="#kontakt">Kontakt</a>
                 </nav>
-                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
             </div>
         </div>
     </header>
@@ -671,7 +673,7 @@
                 </p>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 48px; max-width: 1200px; margin: 0 auto;">
+            <div class="contact-form">
                 <!-- Contact Info -->
                 <div>
                     <div class="feature-card">
@@ -714,7 +716,7 @@
                 <!-- Contact Form -->
                 <div>
                     <div class="feature-card">
-                        <form onsubmit="handleFormSubmit(event)" style="display: flex; flex-direction: column; gap: 24px;">
+                        <form action="https://formspree.io/f/xkgzjaej" method="POST" style="display: flex; flex-direction: column; gap: 24px;">
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
                                 <div>
                                     <label style="display: block; color: var(--text-primary); font-weight: 500; margin-bottom: 8px;">
@@ -816,12 +818,6 @@
             }
         });
 
-        // Mobile menu toggle
-        function toggleMenu() {
-            const nav = document.getElementById('nav');
-            nav.classList.toggle('show');
-        }
-
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -838,26 +834,6 @@
             });
         });
 
-        // Form submission
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            const form = event.target;
-            const formData = new FormData(form);
-            
-            // Simulate form submission
-            const submitButton = form.querySelector('button[type="submit"]');
-            const originalText = submitButton.innerHTML;
-            
-            submitButton.innerHTML = '<span style="width: 16px; height: 16px; border: 2px solid var(--bg-primary); border-top: 2px solid transparent; border-radius: 50%; animation: spin 1s linear infinite; display: inline-block; margin-right: 8px;"></span>Wird gesendet...';
-            submitButton.disabled = true;
-            
-            setTimeout(() => {
-                alert('Nachricht gesendet! Vielen Dank für Ihre Anfrage. Ich melde mich bald möglichst bei Ihnen.');
-                form.reset();
-                submitButton.innerHTML = originalText;
-                submitButton.disabled = false;
-            }, 2000);
-        }
 
         // Add spin animation
         const style = document.createElement('style');
