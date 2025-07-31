@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serafino Data Analytics - Intelligente Datenlösungen für Unternehmen</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -330,7 +334,7 @@
 
         .contact-form {
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr;
             max-width: 100%;
             margin: 0 auto;
             gap: 48px;
@@ -628,7 +632,7 @@
     <!-- About Section -->
     <section id="ueber-mich" class="section">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 200px; align-items: center;">
                 <div>
                     <h2 class="display-md mb-6">Über mich</h2>
                     <h3 class="h2 mb-6" style="color: var(--accent-primary);">
@@ -669,50 +673,11 @@
             <div class="text-center mb-16">
                 <h2 class="display-md mb-6">Kontakt</h2>
                 <p class="body-lg max-w-3xl mx-auto">
-                    Sie haben Fragen oder möchten ein Projekt besprechen? Ich freue mich auf Ihre Nachricht. Nehmen Sie unverbindlich Kontakt auf – per E-Mail oder direkt über das Formular.
+                    Sie haben Fragen oder möchten ein Projekt besprechen? Ich freue mich auf Ihre Nachricht. Nehmen Sie unverbindlich Kontakt auf über das Formular.
                 </p>
             </div>
 
             <div class="contact-form">
-                <!-- Contact Info -->
-                <div>
-                    <div class="feature-card">
-                        <h3 class="h3 mb-6">Kontaktinformationen</h3>
-                        
-                        <div style="display: flex; flex-direction: column; gap: 24px;">
-                            <div class="flex items-start gap-4">
-                                <div style="width: 40px; height: 40px; background: rgba(218, 255, 1, 0.2); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                                    ✉️
-                                </div>
-                                <div>
-                                    <div style="font-weight: 500; color: var(--text-primary);">E-Mail</div>
-                                    <div class="body-sm">samuele.serafino@gmail.com</div>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-4">
-                                <div style="width: 40px; height: 40px; background: rgba(218, 255, 1, 0.2); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                                    📍
-                                </div>
-                                <div>
-                                    <div style="font-weight: 500; color: var(--text-primary);">Standort</div>
-                                    <div class="body-sm">Winterthur, Schweiz</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mt-6" style="padding-top: 24px; border-top: 1px solid var(--border-subtle);">
-                            <div class="flex items-center gap-2">
-                                <div style="width: 12px; height: 12px; background: var(--accent-primary); border-radius: 50%; animation: pulse 2s infinite;"></div>
-                                <span style="color: var(--accent-primary); font-weight: 500;" class="body-sm">
-                                    Verfügbar für neue Projekte
-                                </span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
                 <!-- Contact Form -->
                 <div>
                     <div class="feature-card">
